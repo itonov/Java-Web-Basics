@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+</head>
+<body>
+    <form action="/products/create" method="post">
+        <input type="text" name="name" placeholder="Name..."/><br/>
+        <input type="text" name="description" placeholder="Description..."/><br/>
+        <select name="type">
+            <option value="FOOD">Food</option>
+            <option value="DOMESTIC">Domestic</option>
+            <option value="HEALTH">Health</option>
+            <option value="COSMETIC">Cosmetic</option>
+            <option value="OTHER">Other</option>
+        </select>
+        <br/>
+        <button class="button" type="submit">Submit</button>
+    </form>
+</body>
+</html>

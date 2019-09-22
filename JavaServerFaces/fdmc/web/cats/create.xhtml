@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Dell
+  Date: 10-Jun-18
+  Time: 1:59 PM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:composite="http://java.sun.com/jsf/composite">
+
+<h:head>
+    <title>FDMC</title>
+</h:head>
+
+<h:body>
+    <h1>Create a Cat!</h1>
+    <br/>
+    <form action="/cats/create" method="post">
+        Name: <h:inputText id="name" ></h:inputText>
+        <br/>
+        Breed: <h:inputText id="breed"></h:inputText>
+        <br/>
+        Color: <h:inputText id="color"></h:inputText>
+        <br/>
+        Number Of Legs: <h:inputText id="numberOfLegs"></h:inputText>
+        <br/>
+        <button>Create a Cat</button>
+    </form>
+    <br/>
+    <a href="/">Back to Home</a>
+</h:body>
+
+</html>

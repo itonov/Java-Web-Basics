@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Dell
+  Date: 11-Jun-18
+  Time: 11:29 AM
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>FDMC</title>
+</h:head>
+
+<h:body>
+    <h1>All Cats</h1>
+    <hr/>
+    <ul>
+        <ui:repeat value="#{application.getAttribute('cats').getAllCatsOrdered()}" var="cat">
+            <h3>
+                <h:outputLink value="/cats/profile">
+                    <h:outputText value="#{cat.getName()}"/>
+                    <f:param name="catName" value="#{cat.getName()}"/>
+                </h:outputLink>
+            </h3>
+        </ui:repeat>
+    </ul>
+    <br/>
+
+    <a href="/">Back to Home</a>
+</h:body>
+
+</html>
